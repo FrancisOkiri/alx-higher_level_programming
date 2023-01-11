@@ -1,9 +1,8 @@
 #!/usr/bin/python3
+def square_matrix_simple(matrix=[]):
+    new_matrix = matrix.copy()
 
-if __name__ == "__main__":
-    """Print the sum of a and b."""
-    from add_0 import add
+    for i in range(len(matrix)):
+        new_matrix[i] = list(map(lambda x: x**2, matrix[i]))
 
-    a = 1
-    b = 2
-    print("{0} + {1} = {2}".format(a, b, add(a, b)))
+    return (new_matrix)
